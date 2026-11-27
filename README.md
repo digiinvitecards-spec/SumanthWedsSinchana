@@ -2,29 +2,24 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sumanth ❤️ Sinchana | Wedding Invitation</title>
+<title>Sumanth & Sinchana | Wedding Invitation</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Cinzel:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
-/* =========================
-   COLOR THEME
-========================= */
-
 :root {
-    --black: #080C14;
-    --dark: #101827;
-    --card: #151F30;
-    --blue: #A9C8E8;
-    --lightblue: #DCEBFA;
-    --silver: #BFCBDA;
-    --white: #F5F7FA;
-    --muted: #A5B1C0;
+    --pista: #C5D5B5;
+    --sage: #A9B99B;
+    --darkgreen: #53634B;
+    --ivory: #F8F7F0;
+    --cream: #EFEEE4;
+    --gold: #C6AD7C;
+    --text: #686B61;
+    --white: #FFFFFF;
 }
 
 * {
@@ -35,748 +30,427 @@
 }
 
 body {
-    background: var(--black);
-    color: var(--white);
+    background: var(--ivory);
+    color: var(--text);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* HERO */
 
 .hero {
-
     min-height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
-    position: relative;
-
     padding: 35px 20px;
+    position: relative;
 
     background:
     linear-gradient(
-        rgba(5,10,20,.72),
-        rgba(5,10,20,.85)
+        rgba(248,247,240,.78),
+        rgba(248,247,240,.85)
     ),
     url('1.png');
 
     background-size: cover;
     background-position: center;
-
 }
 
-.hero::before {
-
-    content: "";
-
+.hero-border {
     position: absolute;
-
-    inset: 20px;
-
-    border: 1px solid var(--blue);
-
+    inset: 22px;
+    border: 1px solid var(--gold);
     pointer-events: none;
-
-}
-
-.hero::after {
-
-    content: "✧";
-
-    position: absolute;
-
-    top: 45px;
-
-    color: var(--blue);
-
-    font-size: 35px;
-
 }
 
 .hero-content {
-
     position: relative;
-
     z-index: 2;
-
-    max-width: 750px;
-
-    animation: fadeIn 2s ease;
-
+    animation: appear 1.5s ease;
 }
 
-@keyframes fadeIn {
-
+@keyframes appear {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(25px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
-
 }
 
 .top-text {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: var(--darkgreen);
+    margin-bottom: 30px;
+}
 
-    font-size: 12px;
-
-    letter-spacing: 6px;
-
-    color: var(--silver);
-
-    margin-bottom: 35px;
-
+.flower {
+    color: var(--sage);
+    font-size: 35px;
+    margin: 20px;
 }
 
 .hero h1 {
-
-    font-family: 'Cinzel', serif;
-
-    font-size: clamp(38px, 8vw, 72px);
-
-    font-weight: 400;
-
-    color: var(--blue);
-
-    margin: 15px 0;
-
-    letter-spacing: 2px;
-
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(48px, 9vw, 85px);
+    color: var(--darkgreen);
+    font-weight: 500;
+    line-height: 1.1;
 }
 
 .ampersand {
-
-    font-family: 'Cormorant Garamond', serif;
-
+    font-family: 'Great Vibes', cursive;
     font-size: 55px;
-
-    color: var(--silver);
-
-    margin: 5px;
-
+    color: var(--gold);
+    margin: 10px;
 }
 
 .hero-description {
-
     font-family: 'Cormorant Garamond', serif;
-
-    font-size: 24px;
-
-    color: var(--white);
-
+    font-size: 23px;
     line-height: 1.7;
-
     margin-top: 25px;
-
-}
-
-.ornament {
-
-    color: var(--blue);
-
-    font-size: 28px;
-
-    margin: 25px 0;
-
+    color: var(--text);
 }
 
 .open-button {
-
     display: inline-block;
-
     margin-top: 35px;
-
-    padding: 15px 40px;
-
-    border: 1px solid var(--blue);
-
-    color: var(--lightblue);
-
+    padding: 14px 38px;
+    border: 1px solid var(--sage);
+    color: var(--darkgreen);
     text-decoration: none;
-
-    letter-spacing: 3px;
-
     font-size: 12px;
-
+    letter-spacing: 2px;
     transition: .4s;
-
 }
 
 .open-button:hover {
-
-    background: var(--blue);
-
-    color: var(--black);
-
-    box-shadow: 0 0 25px rgba(169,200,232,.3);
-
+    background: var(--sage);
+    color: white;
 }
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+/* GENERAL SECTIONS */
 
 section {
-
-    padding: 90px 22px;
-
-    position: relative;
-
+    padding: 85px 22px;
 }
 
 .section-title {
-
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 6vw, 55px);
+    color: var(--darkgreen);
     text-align: center;
-
-    font-family: 'Cinzel', serif;
-
-    font-size: clamp(30px, 6vw, 45px);
-
-    color: var(--blue);
-
-    font-weight: 400;
-
-    margin-bottom: 15px;
-
+    font-weight: 500;
 }
 
 .subtitle {
-
     text-align: center;
-
     font-family: 'Cormorant Garamond', serif;
-
-    font-size: 23px;
-
-    color: var(--muted);
-
-    margin-bottom: 45px;
-
+    font-size: 22px;
+    color: var(--text);
+    margin: 12px 0 40px;
 }
 
 .divider {
-
     text-align: center;
+    color: var(--gold);
+    font-size: 23px;
+    margin: 25px;
+}
 
-    color: var(--blue);
+/* OUR STORY */
 
+.story {
+    background: var(--cream);
+}
+
+.story-content {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
-
-    margin: 25px 0;
-
+    line-height: 1.8;
+    color: var(--text);
 }
 
-/* =========================
-   OUR JOURNEY
-========================= */
-
-.gallery-section {
-
-    background: var(--dark);
-
-}
+/* GALLERY */
 
 .gallery {
-
     display: grid;
-
     grid-template-columns: repeat(
         auto-fit,
-        minmax(250px, 1fr)
+        minmax(240px, 1fr)
     );
-
-    gap: 30px;
-
-    max-width: 1100px;
-
+    gap: 25px;
+    max-width: 1050px;
     margin: auto;
-
 }
 
 .gallery-item {
-
-    background: var(--card);
-
-    padding: 10px;
-
-    border: 1px solid rgba(169,200,232,.35);
-
+    background: white;
+    padding: 9px;
+    border: 1px solid #e4dfd0;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(70,80,55,.08);
     overflow: hidden;
-
 }
 
 .gallery img {
-
     width: 100%;
-
-    height: 350px;
-
+    height: 340px;
     object-fit: cover;
-
-    display: block;
-
     cursor: pointer;
-
-    transition: .6s;
-
+    display: block;
+    transition: .5s;
 }
 
 .gallery img:hover {
-
-    transform: scale(1.06);
-
+    transform: scale(1.04);
 }
 
 .gallery-caption {
-
+    padding: 15px 5px;
     text-align: center;
-
-    padding: 15px;
-
+    color: var(--darkgreen);
     font-family: 'Cormorant Garamond', serif;
-
-    color: var(--blue);
-
-    font-size: 22px;
-
+    font-size: 23px;
 }
 
-/* =========================
-   COUNTDOWN
-========================= */
+/* COUNTDOWN */
 
 .countdown-section {
+    background: var(--pista);
+}
 
-    background:
-
-    linear-gradient(
-        135deg,
-        #080C14,
-        #17253A,
-        #080C14
-    );
-
+.countdown-section .section-title {
+    color: var(--darkgreen);
 }
 
 .countdown {
-
     display: flex;
-
     justify-content: center;
-
     flex-wrap: wrap;
-
-    gap: 20px;
-
-    margin-top: 45px;
-
+    gap: 18px;
+    margin-top: 40px;
 }
 
-.countdown-box {
-
-    width: 125px;
-
+.count-box {
+    background: rgba(255,255,255,.65);
+    width: 120px;
     padding: 25px 10px;
-
     text-align: center;
-
-    background: rgba(255,255,255,.04);
-
-    border: 1px solid rgba(169,200,232,.5);
-
-    backdrop-filter: blur(10px);
-
-    transition: .3s;
-
+    border: 1px solid rgba(198,173,124,.5);
+    border-radius: 8px;
 }
 
-.countdown-box:hover {
-
-    transform: translateY(-8px);
-
-    background: rgba(169,200,232,.1);
-
+.number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 43px;
+    color: var(--darkgreen);
 }
 
-.count-number {
-
-    font-family: 'Cinzel', serif;
-
-    font-size: 38px;
-
-    color: var(--blue);
-
-}
-
-.count-label {
-
+.label {
     font-size: 11px;
-
     letter-spacing: 2px;
-
-    color: var(--silver);
-
-    margin-top: 10px;
-
+    color: var(--text);
+    margin-top: 8px;
 }
 
-/* =========================
-   WEDDING DETAILS
-========================= */
+/* WEDDING DETAILS */
 
 .details-section {
-
-    background: var(--black);
-
+    background: var(--ivory);
 }
 
 .details-card {
-
-    max-width: 700px;
-
+    max-width: 650px;
     margin: auto;
-
-    padding: 50px 25px;
-
+    padding: 45px 25px;
     text-align: center;
-
-    background: linear-gradient(
-        145deg,
-        #172235,
-        #0D1421
-    );
-
-    border: 1px solid rgba(169,200,232,.5);
-
-    box-shadow: 0 20px 60px rgba(0,0,0,.4);
-
-    position: relative;
-
-}
-
-.details-card::before {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 9px;
-
-    border: 1px solid rgba(169,200,232,.2);
-
-    pointer-events: none;
-
+    background: white;
+    border: 1px solid #e5dfce;
+    box-shadow: 0 15px 40px rgba(70,80,55,.08);
+    border-radius: 5px;
 }
 
 .details-date {
-
-    font-family: 'Cinzel', serif;
-
-    font-size: clamp(25px, 5vw, 36px);
-
-    color: var(--blue);
-
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    color: var(--darkgreen);
     margin: 25px 0;
-
 }
 
 .details-text {
-
     font-family: 'Cormorant Garamond', serif;
-
     font-size: 25px;
-
-    line-height: 2;
-
-    color: var(--white);
-
+    line-height: 1.9;
+    color: var(--text);
 }
 
 .details-text b {
-
-    color: var(--blue);
-
+    color: var(--darkgreen);
 }
 
 .map-button {
-
     display: inline-block;
-
-    margin-top: 35px;
-
-    padding: 14px 35px;
-
-    color: var(--black);
-
-    background: var(--blue);
-
+    margin-top: 30px;
+    padding: 13px 32px;
+    background: var(--darkgreen);
+    color: white;
     text-decoration: none;
-
     font-size: 12px;
-
     letter-spacing: 2px;
-
     transition: .3s;
-
 }
 
 .map-button:hover {
-
-    background: var(--lightblue);
-
-    box-shadow: 0 0 25px rgba(169,200,232,.3);
-
+    background: var(--sage);
 }
 
-/* =========================
-   CLOSING SECTION
-========================= */
+/* CLOSING */
 
 .closing {
-
-    background: var(--dark);
-
+    background: #E9EEE2;
     text-align: center;
-
 }
 
 .closing-card {
-
     max-width: 750px;
-
     margin: auto;
-
     padding: 45px 20px;
-
-    border: 1px solid rgba(169,200,232,.4);
-
+    border: 1px solid var(--gold);
+    background: rgba(255,255,255,.5);
 }
 
 .closing-card p {
-
     font-family: 'Cormorant Garamond', serif;
-
     font-size: 25px;
-
     line-height: 1.8;
-
-    color: var(--silver);
-
 }
 
 .signature {
-
-    font-family: 'Cinzel', serif;
-
-    font-size: clamp(25px, 5vw, 40px);
-
-    color: var(--blue);
-
-    margin-top: 30px;
-
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: var(--darkgreen);
+    margin: 25px 0;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
-
-    background: #05080E;
-
-    padding: 45px 20px;
-
+    background: var(--darkgreen);
+    color: var(--ivory);
+    padding: 40px 20px;
     text-align: center;
-
-    color: var(--muted);
-
     font-family: 'Cormorant Garamond', serif;
-
-    font-size: 21px;
-
+    font-size: 22px;
 }
 
-/* =========================
-   FLOATING PETALS
-========================= */
+/* FLOATING FLOWERS */
 
 .petal {
-
     position: fixed;
-
     top: -40px;
-
     z-index: 100;
-
     pointer-events: none;
-
-    color: var(--blue);
-
+    color: var(--sage);
     animation: falling linear infinite;
-
 }
 
 @keyframes falling {
-
     0% {
-
-        transform: translateY(-50px) rotate(0deg);
-
+        transform: translateY(-40px) rotate(0deg);
         opacity: 0;
-
     }
 
     15% {
-
-        opacity: .7;
-
+        opacity: .5;
     }
 
     100% {
-
-        transform: translateY(110vh) rotate(360deg);
-
+        transform: translateY(110vh) rotate(180deg);
         opacity: 0;
-
     }
-
 }
 
-/* =========================
-   MUSIC BUTTON
-========================= */
+/* MUSIC BUTTON */
 
 #musicBtn {
-
     position: fixed;
-
-    bottom: 25px;
-
+    bottom: 22px;
     right: 20px;
-
-    height: 55px;
-
-    width: 55px;
-
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
-
-    background: var(--blue);
-
-    color: var(--black);
-
-    border: 1px solid var(--silver);
-
-    font-size: 22px;
-
+    border: 1px solid var(--gold);
+    background: var(--darkgreen);
+    color: white;
+    font-size: 21px;
     cursor: pointer;
-
     z-index: 999;
-
-    box-shadow: 0 5px 25px rgba(169,200,232,.2);
-
 }
 
-/* =========================
-   IMAGE VIEWER
-========================= */
+/* IMAGE VIEWER */
 
 .viewer {
-
     position: fixed;
-
     inset: 0;
-
-    background: rgba(0,0,0,.96);
-
+    background: rgba(20,30,20,.95);
     display: none;
-
     justify-content: center;
-
     align-items: center;
-
     z-index: 2000;
-
     padding: 20px;
-
 }
 
 .viewer img {
-
     max-width: 95%;
-
     max-height: 85vh;
-
-    border: 1px solid var(--blue);
-
+    border: 3px solid white;
 }
 
 .close {
-
     position: absolute;
-
     top: 25px;
-
     right: 30px;
-
     color: white;
-
     font-size: 40px;
-
     cursor: pointer;
-
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+/* MOBILE */
 
 @media(max-width:600px) {
 
     section {
-
         padding: 65px 18px;
-
     }
 
     .gallery img {
-
-        height: 300px;
-
+        height: 280px;
     }
 
-    .countdown-box {
-
+    .count-box {
         width: 105px;
-
-        padding: 20px 5px;
-
     }
 
-    .count-number {
-
-        font-size: 29px;
-
+    .number {
+        font-size: 34px;
     }
 
     .details-card {
-
-        padding: 40px 18px;
-
+        padding: 35px 15px;
     }
 
-    .top-text {
-
-        letter-spacing: 3px;
-
+    .hero-description {
+        font-size: 20px;
     }
 
 }
@@ -787,19 +461,19 @@ footer {
 
 <body>
 
-<!-- =========================
-     OPENING INVITATION
-========================= -->
+<!-- HERO -->
 
 <div class="hero">
+
+<div class="hero-border"></div>
 
 <div class="hero-content">
 
 <div class="top-text">
-A BEAUTIFUL BEGINNING
+TOGETHER WITH OUR FAMILIES
 </div>
 
-<div class="ornament">✧ ─── ❦ ─── ✧</div>
+<div class="flower">❀</div>
 
 <h1>Sumanth S</h1>
 
@@ -807,22 +481,17 @@ A BEAUTIFUL BEGINNING
 
 <h1>Sinchana P</h1>
 
-<div class="ornament">✧ ─── ❦ ─── ✧</div>
+<div class="flower">❀</div>
 
 <div class="hero-description">
 
-Together with our families<br>
-
-request the pleasure of your presence<br>
-
-to celebrate our wedding.
+We invite you to celebrate<br>
+the beginning of our forever.
 
 </div>
 
-<a href="#gallery" class="open-button">
-
-EXPLORE INVITATION
-
+<a href="#story" class="open-button">
+OPEN INVITATION
 </a>
 
 </div>
@@ -830,34 +499,51 @@ EXPLORE INVITATION
 </div>
 
 
-<!-- =========================
-     OUR JOURNEY
-========================= -->
+<!-- OUR STORY -->
 
-<section class="gallery-section" id="gallery">
+<section class="story" id="story">
 
-<h2 class="section-title">
-Our Journey
-</h2>
+<h2 class="section-title">Our Story</h2>
 
 <p class="subtitle">
-
-Two hearts. One beautiful forever.
-
+A beautiful journey begins with two hearts.
 </p>
 
-<div class="divider">
-✧ ❦ ✧
+<div class="divider">✦ ❀ ✦</div>
+
+<div class="story-content">
+
+Some beautiful moments become memories,
+and some memories become forever.
+
+With the love and blessings of our families,
+we invite you to be part of our special day.
+
 </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section>
+
+<h2 class="section-title">Beautiful Memories</h2>
+
+<p class="subtitle">
+A glimpse of our journey together.
+</p>
+
+<div class="divider">✦ ❀ ✦</div>
 
 <div class="gallery">
 
 <div class="gallery-item">
 
-<img src="1.png" alt="Sumanth and Sinchana">
+<img src="1.png" alt="Couple photograph">
 
 <div class="gallery-caption">
-A Beautiful Beginning
+Our Beginning
 </div>
 
 </div>
@@ -867,7 +553,7 @@ A Beautiful Beginning
 <img src="2.png" alt="Couple photograph">
 
 <div class="gallery-caption">
-Together Forever
+Together
 </div>
 
 </div>
@@ -877,7 +563,7 @@ Together Forever
 <img src="3.png" alt="Couple photograph">
 
 <div class="gallery-caption">
-Our Forever Story
+Forever
 </div>
 
 </div>
@@ -887,60 +573,38 @@ Our Forever Story
 </section>
 
 
-<!-- =========================
-     COUNTDOWN
-========================= -->
+<!-- COUNTDOWN -->
 
 <section class="countdown-section">
 
 <h2 class="section-title">
-
 Save The Date
-
 </h2>
 
 <p class="subtitle">
-
-The countdown to our forever begins.
-
+The countdown to our forever.
 </p>
-
-<div class="divider">
-✧ ─── ❦ ─── ✧
-</div>
 
 <div class="countdown" id="countdown">
 
-<div class="countdown-box">
-
-<div class="count-number" id="days">00</div>
-
-<div class="count-label">DAYS</div>
-
+<div class="count-box">
+<div class="number" id="days">00</div>
+<div class="label">DAYS</div>
 </div>
 
-<div class="countdown-box">
-
-<div class="count-number" id="hours">00</div>
-
-<div class="count-label">HOURS</div>
-
+<div class="count-box">
+<div class="number" id="hours">00</div>
+<div class="label">HOURS</div>
 </div>
 
-<div class="countdown-box">
-
-<div class="count-number" id="minutes">00</div>
-
-<div class="count-label">MINUTES</div>
-
+<div class="count-box">
+<div class="number" id="minutes">00</div>
+<div class="label">MINUTES</div>
 </div>
 
-<div class="countdown-box">
-
-<div class="count-number" id="seconds">00</div>
-
-<div class="count-label">SECONDS</div>
-
+<div class="count-box">
+<div class="number" id="seconds">00</div>
+<div class="label">SECONDS</div>
 </div>
 
 </div>
@@ -948,56 +612,39 @@ The countdown to our forever begins.
 </section>
 
 
-<!-- =========================
-     WEDDING DETAILS
-========================= -->
+<!-- WEDDING DETAILS -->
 
 <section class="details-section">
 
 <h2 class="section-title">
-
 Wedding Celebration
-
 </h2>
 
 <p class="subtitle">
-
-A day filled with love, blessings and happiness.
-
+A day of love, laughter and blessings.
 </p>
 
 <div class="details-card">
 
-<div class="ornament">✧</div>
+<div class="flower">❀</div>
 
 <div class="details-date">
-
 25 December 2026
-
 </div>
 
-<div class="divider">
-──── ❦ ────
-</div>
+<div class="divider">──── ✦ ────</div>
 
 <div class="details-text">
 
-🕙 <b>Muhurtham</b>
-
-<br>
+<b>Muhurtham</b><br>
 
 12:25 PM Onwards
 
 <br><br>
 
-📍 <b>Kannada Bhavana</b>
+<b>Kannada Bhavana</b><br>
 
-<br>
-
-Near Swaraj Maidan
-
-<br>
-
+Near Swaraj Maidan,<br>
 Moodbidri
 
 </div>
@@ -1008,7 +655,7 @@ href="https://maps.app.goo.gl/vP5ina9rLYnSjTJo8"
 target="_blank"
 rel="noopener">
 
-VIEW VENUE LOCATION
+VIEW VENUE
 
 </a>
 
@@ -1017,21 +664,15 @@ VIEW VENUE LOCATION
 </section>
 
 
-<!-- =========================
-     CLOSING
-========================= -->
+<!-- CLOSING -->
 
 <section class="closing">
 
 <h2 class="section-title">
-
 We Await Your Presence
-
 </h2>
 
-<div class="divider">
-✧ ❦ ✧
-</div>
+<div class="divider">✦ ❀ ✦</div>
 
 <div class="closing-card">
 
@@ -1042,23 +683,17 @@ more joyful and memorable.
 
 <br><br>
 
-We cannot wait to celebrate
-our forever with you.
+We look forward to celebrating
+this beautiful beginning with you.
 
 </p>
 
 <div class="signature">
-
-Sumanth S ❤️ Sinchana P
-
+Sumanth & Sinchana
 </div>
 
-<br>
-
 <p>
-
 25 December 2026
-
 </p>
 
 </div>
@@ -1066,39 +701,33 @@ Sumanth S ❤️ Sinchana P
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
-<div class="divider">
-✧ ❦ ✧
-</div>
+<div class="flower">❀</div>
 
-Made with Love ❤️
+With Love & Blessings
 
 <br>
 
-Sumanth S & Sinchana P
+Sumanth S ❤️ Sinchana P
 
 </footer>
 
 
-<!-- MUSIC BUTTON -->
+<!-- MUSIC -->
 
-<button id="musicBtn" aria-label="Play background music">
+<button id="musicBtn" aria-label="Play music">
 🎵
 </button>
 
 <audio id="music" loop>
-
 <source src="music.mp3" type="audio/mpeg">
-
 </audio>
 
 
-<!-- IMAGE VIEWER -->
+<!-- PHOTO VIEWER -->
 
 <div class="viewer" id="viewer">
 
@@ -1111,27 +740,22 @@ Sumanth S & Sinchana P
 
 <script>
 
-/* =========================
-   WEDDING COUNTDOWN
-========================= */
+/* COUNTDOWN */
 
-const weddingDate = new Date(
-    "2026-12-25T12:25:00+05:30"
-).getTime();
+const weddingDate =
+new Date("2026-12-25T12:25:00+05:30").getTime();
 
 function updateCountdown() {
 
     const now = Date.now();
-
     const distance = weddingDate - now;
 
     if (distance <= 0) {
 
         document.getElementById("countdown").innerHTML =
-        "<h2 style='color:#A9C8E8'>The Wedding Day Has Arrived! ❤️</h2>";
+        "<h2>The Wedding Day Has Arrived! ❤️</h2>";
 
         return;
-
     }
 
     const days = Math.floor(
@@ -1153,43 +777,36 @@ function updateCountdown() {
     );
 
     document.getElementById("days").innerText = days;
-
     document.getElementById("hours").innerText = hours;
-
     document.getElementById("minutes").innerText = minutes;
-
     document.getElementById("seconds").innerText = seconds;
 
 }
 
 updateCountdown();
-
 setInterval(updateCountdown, 1000);
 
 
-/* =========================
-   FLOATING BLUE PETALS
-========================= */
+/* FLOATING PETALS */
 
-const petals = ["✧", "❀", "✦", "❋"];
+const flowers = ["❀", "✿", "✧"];
 
-for (let i = 0; i < 18; i++) {
+for (let i = 0; i < 12; i++) {
 
     const petal = document.createElement("div");
 
     petal.className = "petal";
 
     petal.innerHTML =
-    petals[Math.floor(Math.random() * petals.length)];
+    flowers[Math.floor(Math.random() * flowers.length)];
 
-    petal.style.left =
-    Math.random() * 100 + "vw";
+    petal.style.left = Math.random() * 100 + "vw";
 
     petal.style.fontSize =
-    (15 + Math.random() * 18) + "px";
+    (14 + Math.random() * 12) + "px";
 
     petal.style.animationDuration =
-    (8 + Math.random() * 8) + "s";
+    (10 + Math.random() * 8) + "s";
 
     petal.style.animationDelay =
     Math.random() * 8 + "s";
@@ -1199,61 +816,14 @@ for (let i = 0; i < 18; i++) {
 }
 
 
-/* =========================
-   SCROLL ANIMATION
-========================= */
-
-const observer = new IntersectionObserver(entries => {
-
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-
-            entry.target.animate(
-                [
-                    {
-                        opacity: 0,
-                        transform: "translateY(35px)"
-                    },
-
-                    {
-                        opacity: 1,
-                        transform: "translateY(0)"
-                    }
-                ],
-
-                {
-                    duration: 1000,
-                    fill: "forwards"
-                }
-            );
-
-            observer.unobserve(entry.target);
-
-        }
-
-    });
-
-}, { threshold: 0.1 });
-
-document.querySelectorAll("section").forEach(section => {
-
-    observer.observe(section);
-
-});
-
-
-/* =========================
-   BACKGROUND MUSIC
-========================= */
+/* MUSIC */
 
 const music = document.getElementById("music");
-
 const musicBtn = document.getElementById("musicBtn");
 
 let playing = false;
 
-musicBtn.addEventListener("click", async function() {
+musicBtn.onclick = async function() {
 
     if (!playing) {
 
@@ -1265,17 +835,13 @@ musicBtn.addEventListener("click", async function() {
 
             playing = true;
 
-        }
-
-        catch(error) {
+        } catch(error) {
 
             alert("Please upload music.mp3 to your repository.");
 
         }
 
-    }
-
-    else {
+    } else {
 
         music.pause();
 
@@ -1285,26 +851,23 @@ musicBtn.addEventListener("click", async function() {
 
     }
 
-});
+};
 
 
-/* =========================
-   PHOTO GALLERY VIEWER
-========================= */
+/* PHOTO GALLERY */
 
 const viewer = document.getElementById("viewer");
-
 const preview = document.getElementById("preview");
 
 document.querySelectorAll(".gallery img").forEach(img => {
 
-    img.addEventListener("click", function() {
+    img.onclick = function() {
 
         viewer.style.display = "flex";
 
         preview.src = this.src;
 
-    });
+    };
 
 });
 
@@ -1324,18 +887,39 @@ viewer.onclick = function(event) {
 
 };
 
-document.addEventListener("keydown", function(event) {
 
-    if (event.key === "Escape") {
+/* SCROLL ANIMATION */
 
-        viewer.style.display = "none";
+const observer = new IntersectionObserver(entries => {
 
-    }
+    entries.forEach(entry => {
 
+        if (entry.isIntersecting) {
+
+            entry.target.animate(
+                [
+                    {opacity: 0, transform: "translateY(25px)"},
+                    {opacity: 1, transform: "translateY(0)"}
+                ],
+                {
+                    duration: 800,
+                    fill: "forwards"
+                }
+            );
+
+            observer.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {threshold: 0.1});
+
+document.querySelectorAll("section").forEach(section => {
+    observer.observe(section);
 });
 
 </script>
 
 </body>
-
 </html>
